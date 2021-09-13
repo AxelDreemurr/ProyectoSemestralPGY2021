@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <app-encabezado></app-encabezado>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">RegistrApp</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+  <div id=intro>
+    <strong>Bienvenid@!</strong>
+    <p>Desde esta aplicación podrás solicitar un viaje a aquellos compañeros que estén registrados como Conductores, o convertirte en uno y ayudar al resto en el viaje de vuelta a casa!</p>
+  </div>
+
+  <div id=banner>
+    <strong>Elige una opción:</strong>
+    <a routerLink="/new" routerDirection="forward">
+      <img src="assets/img/Pedir.png"/>
+   </a>
+
+   <a routerLink="/daily" routerDirection="forward">
+    <img src="assets/img/Iniciar.png"/>
+ </a>
+  </div>
+</ion-content>
