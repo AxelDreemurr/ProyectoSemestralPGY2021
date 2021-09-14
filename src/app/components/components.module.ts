@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { FooterComponent } from './footer/footer.component';
+import { EncabezadologinComponent } from './encabezadologin/encabezadologin.component';
+import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.component';
 
 
 
@@ -10,13 +12,17 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     EncabezadoComponent,
-    FooterComponent],
+    FooterComponent,
+    EncabezadologinComponent,
+    EncabezadoforgotComponent],
   imports: [
     CommonModule,
     IonicModule
   ],
   exports: [
-    EncabezadoComponent
+    EncabezadoComponent,
+    EncabezadologinComponent,
+    EncabezadoforgotComponent
   ]
 })
 export class ComponentsModule { }

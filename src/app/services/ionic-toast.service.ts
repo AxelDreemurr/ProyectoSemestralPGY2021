@@ -7,6 +7,7 @@ import { ToastController } from '@ionic/angular';
 export class IonicToastService {
 
   private myToast: any;
+  private qrToast: any;
 
   constructor(
     public toast: ToastController
@@ -14,13 +15,14 @@ export class IonicToastService {
 
   showToast() {
     this.myToast = this.toast.create({
-      message: 'Construyéndose con ❤️ por el Grupo 2',
+      message: '¡Próximamente! 🚀',
       duration: 2000
     }).then((toastData) => {
       console.log(toastData);
       toastData.present();
     });
   }
+
   hideToast() {
     this.myToast = this.toast.dismiss();
   }

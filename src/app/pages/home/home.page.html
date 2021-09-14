@@ -11,17 +11,15 @@
 
   <div id=intro>
     <strong>Bienvenid@!</strong>
-    <p>Desde esta aplicación podrás solicitar un viaje a aquellos compañeros que estén registrados como Conductores, o convertirte en uno y ayudar al resto en el viaje de vuelta a casa!</p>
+    <p>Desde esta aplicación podrás escanear un Código QR provisto por tu docente para registrar tu asistencia a clases!</p>
+    
+    <p>Si eres docente, podrás generar un Código QR vinculado a la clase actual para que tus alumnos puedan escanearlo y registrar su asistencia.</p>
   </div>
 
   <div id=banner>
     <strong>Elige una opción:</strong>
-    <a routerLink="/new" routerDirection="forward">
-      <img src="assets/img/Pedir.png"/>
-   </a>
+    <ion-button routerLink="/login" routerDirection="forward" expand="block" color="tertiary">Iniciar sesión</ion-button>
 
-   <a routerLink="/daily" routerDirection="forward">
-    <img src="assets/img/Iniciar.png"/>
- </a>
+    <ion-button expand="block" color="success" (click)="showMyToast()"><ion-icon name="qr-code-outline" slot="end"></ion-icon>Abrir Escáner QR</ion-button>
   </div>
 </ion-content>
