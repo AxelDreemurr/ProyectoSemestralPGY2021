@@ -14,7 +14,8 @@ import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.c
     EncabezadoComponent,
     FooterComponent,
     EncabezadologinComponent,
-    EncabezadoforgotComponent],
+    EncabezadoforgotComponent,
+    FooterComponent],
   imports: [
     CommonModule,
     IonicModule
@@ -22,7 +23,8 @@ import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.c
   exports: [
     EncabezadoComponent,
     EncabezadologinComponent,
-    EncabezadoforgotComponent
+    EncabezadoforgotComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
