@@ -9,3 +9,6 @@ Lo que funciona hasta ahora:
  Lo que no funciona:
   - Botón "back" en las páginas de LogIn y Forgot
   - Validaciones simples para identificar a un usuario de prueba
+ 
+ Agregar:
+  - Duplicados de home de bienvenida para alumno (Validación)
