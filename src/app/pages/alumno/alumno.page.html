@@ -1,0 +1,30 @@
+<ion-toolbar color="tertiary">
+
+
+  <ion-buttons slot="start">
+    <ion-button href= "/login">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+
+
+  <div id=intro>
+    <strong>Bienvenid@ Alumn@!</strong>
+    <p>Estas listo para registrar tu asistencia!, solo debes solicitar a tu docente que genére el codigo QR para poder escanearlo.</p>
+    
+    
+  </div>
+
+  <div id=banner>
+    <strong>Escanea ahora!:</strong>
+    
+
+    <ion-button expand="block" color="success" (click)="showMyToast()"><ion-icon name="qr-code-outline" slot="end"></ion-icon>Abrir Escáner QR</ion-button>
+  </div>
+
+
+</ion-content>
