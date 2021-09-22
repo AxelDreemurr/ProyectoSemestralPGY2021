@@ -11,6 +11,7 @@ export class AlumnoPage implements OnInit {
     constructor(
       private ionicToastService: IonicToastService
     ) {}
+    
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
