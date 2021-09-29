@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="toolbar">
+    <ion-buttons slot="end">
+      <ion-button (click)="deleteTarea()">
+        <ion-icon style="color: rgb(254, 182, 27)" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      <ion-title style="text-align:center; color:rgb(254, 182, 27);">
+        Detalle Tarea
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: rgb(254, 182, 27)">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="toolbar">
+    <img [src]="agenda.imagen">
+    <ion-card-header>
+      <ion-card-title style="text-align:center; color: rgb(254, 182, 27);">Título: {{agenda.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2 style="text-align:center; color:white;">Descripción: {{agenda.descripcion}}</h2>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<app-footer></app-footer>

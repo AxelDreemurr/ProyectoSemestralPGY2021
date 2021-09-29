@@ -22,12 +22,25 @@ const routes: Routes = [
   {
     path: 'alumno',
     loadChildren: () => import('./pages/alumno/alumno.module').then( m => m.AlumnoPageModule)
-  },  {
-    path: 'agenda',
-    loadChildren: () => import('./pages/agenda/agenda.module').then( m => m.AgendaPageModule)
   },
+  {
+    path: 'agenda',
+    children: [
+      {
+        path:'',
+        loadChildren: () => import('./pages/agenda/agenda.module').then( m => m.AgendaPageModule)
+      },
+      {
+        path:':id',
+        loadChildren: () => import('./pages/agenda/lista-tareas/lista-tareas.module').then( m => m.ListaTareasPageModule)
+      }
 
+    ]
 
+  },  {
+    path: 'anadir-tarea',
+    loadChildren: () => import('./pages/anadir-tarea/anadir-tarea.module').then( m => m.AnadirTareaPageModule)
+  },
 
 ];
 

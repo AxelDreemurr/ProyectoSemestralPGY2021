@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: AgendaPage
+  },
+  {
+    path: 'lista-tareas',
+    loadChildren: () => import('./lista-tareas/lista-tareas.module').then( m => m.ListaTareasPageModule)
   }
 ];
 
