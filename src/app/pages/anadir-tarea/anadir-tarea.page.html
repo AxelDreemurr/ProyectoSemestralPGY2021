@@ -1,30 +1,24 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Añadir Tarea</ion-title>
-  </ion-toolbar>
+<app-encabezadoadd></app-encabezadoadd>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-card>
-          <ion-card-content>
-            <ion-item>
-              <ion-label style="color:rgb(254, 182, 27);" position="floating">No:</ion-label>
-              <ion-input clearInput #titulo></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label style="color:rgb(254, 182, 27);" position="floating">Foto Conductor:</ion-label>
-              <ion-input clearInput #imagen></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label style="color:rgb(254, 182, 27);" position="floating">Edad Conductor:</ion-label>
-              <ion-input clearInput #descripcion></ion-input>
-            </ion-item>
-          </ion-card-content>
-        </ion-card>
-        <ion-button color="toolbar" (click)="addTarea(titulo,imagen,descripcion)" expand="block" style="margin-top:20px;">Agregar Tarea</ion-button>
+          <ion-item>
+            <ion-label style="color:rgb(255, 255, 255);" position="floating">Título:</ion-label>
+            <ion-input clearInput #titulo></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label style="color:rgb(255, 255, 255);" position="floating">Enlace a Foto:</ion-label>
+            <ion-input clearInput #imagen></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label style="color:rgb(255, 255, 255);" position="floating">Descripción de la tarea:</ion-label>
+            <ion-input clearInput #descripcion></ion-input>
+          </ion-item>
+        <ion-button color="primary" (click)="addTarea(titulo,imagen,descripcion)" expand="block" style="margin-top:20px;">Agregar Tarea</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

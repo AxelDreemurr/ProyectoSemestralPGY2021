@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AnadirTareaPageRoutingModule } from './anadir-tarea-routing.module';
 
 import { AnadirTareaPage } from './anadir-tarea.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AnadirTareaPageRoutingModule
+    AnadirTareaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [AnadirTareaPage]
 })

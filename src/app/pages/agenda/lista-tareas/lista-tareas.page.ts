@@ -26,14 +26,14 @@ export class ListaTareasPage implements OnInit {
   async deleteTarea() {
     const alerta = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Confirmación',
-      message: '¿Estás seguro de querer borrar esta tarea?',
+      header: 'Eliminar tarea',
+      message: '¿Estás seguro? Esta acción es irreversible.',
       buttons: [
         {
-          text: 'No',
+          text: 'Cancelar',
           role: 'cancel',
         }, {
-          text: 'Eliminar Tarea',
+          text: 'Eliminar',
           handler: () => {
             this.agendaService.deleteTarea(this.agenda.id);
             this.router.navigate(["/agenda"]);

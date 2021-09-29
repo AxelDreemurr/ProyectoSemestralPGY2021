@@ -1,15 +1,15 @@
 <ion-header>
-  <app-encabezadologin></app-encabezadologin>
+  <app-encabezadolist></app-encabezadolist>
 </ion-header>
 
 <ion-content fullscreen>
   <ion-list *ngIf="listaTarea">
     <ion-item *ngFor="let aux of listaTarea" [routerLink]="['/agenda', aux.id]">
       <ion-avatar slot="start">
-        <img src="aux.imagen">
+        <img [src]="aux.imagen">
       </ion-avatar>
         <ion-label>
-          <b><p style="color:rgb(198, 6, 236)">
+          <b><p style="color:rgb(255, 255, 255)">
             {{aux.titulo}}
           </p></b>
         </ion-label>
@@ -17,7 +17,7 @@
   </ion-list>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="toolbar" (click)="addTarea()">
-      <ion-icon style="color: rgb(254, 182, 27)" name="add"></ion-icon>
+      <ion-icon color="primary" name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>

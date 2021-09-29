@@ -5,6 +5,8 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { FooterComponent } from './footer/footer.component';
 import { EncabezadologinComponent } from './encabezadologin/encabezadologin.component';
 import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.component';
+import { EncabezadolistComponent } from './encabezadolist/encabezadolist.component';
+import { EncabezadoaddComponent } from './encabezadoadd/encabezadoadd.component';
 
 
 
@@ -15,7 +17,9 @@ import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.c
     FooterComponent,
     EncabezadologinComponent,
     EncabezadoforgotComponent,
-    FooterComponent],
+    FooterComponent,
+    EncabezadolistComponent,
+    EncabezadoaddComponent],
   imports: [
     CommonModule,
     IonicModule
@@ -24,7 +28,9 @@ import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.c
     EncabezadoComponent,
     EncabezadologinComponent,
     EncabezadoforgotComponent,
-    FooterComponent
+    FooterComponent,
+    EncabezadolistComponent,
+    EncabezadoaddComponent
   ]
 })
 export class ComponentsModule { }
