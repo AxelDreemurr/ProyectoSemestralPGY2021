@@ -14,9 +14,6 @@ export class AnadirTareaPage implements OnInit {
   ngOnInit() {
   }
 
-  addTarea(titulo,imagen,descripcion) {
-    this.agendaService.addTarea(titulo.value,imagen.value,descripcion.value);
-    this.router.navigate(["/agenda"]);
-  }
+  
 
 }

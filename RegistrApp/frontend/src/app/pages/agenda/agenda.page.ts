@@ -12,18 +12,17 @@ export class AgendaPage implements OnInit {
 
   titulo = 'Lista de Tareas';
 
-  listaTarea = []
+  listaTarea: any = []
+
   constructor(private agendaService: AgendaService, private router: Router) { }
 
   ngOnInit() {
-    this.listaTarea = this.agendaService.getTareas()
-  }
+    this.agendaService.getTareas().subscribe(
+      (res) => {
+        console.log(res),
+        this.listaTarea = res},
+      (err) => console.log(err)
+    )
 
-  ionViewWillEnter() {
-    this.listaTarea = this.agendaService.getTareas()
-  }
-
-  addTarea() {
-    this.router.navigate(['/anadir-tarea']);
-  }
+      }
 }

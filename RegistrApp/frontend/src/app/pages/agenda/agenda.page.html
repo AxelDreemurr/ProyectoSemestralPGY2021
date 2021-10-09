@@ -3,10 +3,10 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <ion-list *ngIf="listaTarea">
+  <ion-list>
     <ion-item *ngFor="let aux of listaTarea" [routerLink]="['/agenda', aux.id]">
       <ion-avatar slot="start">
-        <img [src]="aux.imagen">
+        <img [src]=" 'http://localhost:1337' + aux.imagen.url ">
       </ion-avatar>
         <ion-label>
           <b><p style="color:rgb(255, 255, 255)">
@@ -16,8 +16,8 @@
     </ion-item>
   </ion-list>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="toolbar" (click)="addTarea()">
-      <ion-icon color="primary" name="add"></ion-icon>
+    <ion-fab-button color="primary" (click)="addTarea()">
+      <ion-icon class="boton" name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
