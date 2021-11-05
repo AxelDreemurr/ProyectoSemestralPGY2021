@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'tareas/edit/:id',
     loadChildren: () => import('./pages/anadir-tarea/anadir-tarea.module').then( m => m.AnadirTareaPageModule)
+  },  {
+    path: 'qr',
+    loadChildren: () => import('./pages/qr/qr.module').then( m => m.QrPageModule)
   }
+
 
 ];
 

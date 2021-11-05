@@ -9,7 +9,7 @@ import { IonicToastService } from '../../services/ionic-toast.service';
 export class AlumnoPage implements OnInit {
 
     constructor(
-      private ionicToastService: IonicToastService
+      private ionicToastService: IonicToastService,
     ) {}
     
   ngOnInit(): void {
