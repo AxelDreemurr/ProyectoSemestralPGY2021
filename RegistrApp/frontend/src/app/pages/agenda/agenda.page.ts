@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/member-ordering */
 import { Component, OnInit } from '@angular/core';
-import { AgendaService } from './agenda.service';
+import { AgendaService } from '../../services/agenda.service';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-agenda',
@@ -14,7 +15,7 @@ export class AgendaPage implements OnInit {
 
   listaTarea: any = []
 
-  constructor(private agendaService: AgendaService, private router: Router) { }
+  constructor(private agendaService: AgendaService, private router: Router, private alerta: AlertController) { }
 
   ngOnInit() {
     this.agendaService.getTareas().subscribe(
@@ -23,6 +24,32 @@ export class AgendaPage implements OnInit {
         this.listaTarea = res},
       (err) => console.log(err)
     )
+  }
 
-      }
+  async eliminarTarea(id) {
+    console.log(id);
+    const alert = await this.alerta.create({
+      header: 'Advertencia',
+      message: '¿En serio quieres eliminar este ítem?',
+      buttons: [
+        {
+          text:'Cancelar',
+          role:'cancel'
+        },
+        {
+          text: 'Eliminar',
+          handler: () => {
+            this.agendaService.deleteTarea(id).subscribe(
+              (res) => {
+                console.log(res)
+              },
+              (err) => console.log(err)
+            )
+          }
+        }
+      ]
+    })
+
+    await alert.present()
+  }
 }

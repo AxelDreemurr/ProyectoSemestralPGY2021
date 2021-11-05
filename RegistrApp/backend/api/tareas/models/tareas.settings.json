@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tareas",
   "info": {
-    "name": "Tareas"
+    "name": "Tareas",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,12 @@
     },
     "descripcion": {
       "type": "text"
+    },
+    "inicio": {
+      "type": "date"
+    },
+    "limite": {
+      "type": "date"
     }
   }
 }
