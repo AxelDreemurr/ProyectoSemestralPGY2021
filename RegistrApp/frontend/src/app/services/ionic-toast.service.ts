@@ -7,7 +7,6 @@ import { ToastController } from '@ionic/angular';
 export class IonicToastService {
 
   private myToast: any;
-  private qrToast: any;
 
   constructor(
     public toast: ToastController

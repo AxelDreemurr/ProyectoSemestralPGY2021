@@ -16,11 +16,11 @@
           </ion-item>
           <ion-item>
             <ion-label>Fecha de inicio:</ion-label>
-            <ion-datetime [(ngModel)]="tarea.inicio" clearInput displayFormat="DD-MM-YYYY" value="2021-01-19" placeholder="Select Date"></ion-datetime>
+            <ion-datetime [(ngModel)]="tarea.inicio" clearInput displayFormat="DD-MM-YYYY" value="2021-01-19" placeholder="Elige una fecha..."></ion-datetime>
           </ion-item>
           <ion-item>
             <ion-label>Fecha límite:</ion-label>
-            <ion-datetime [(ngModel)]="tarea.limite" clearInput displayFormat="DD-MM-YYYY" value="2021-01-19" placeholder="Select Date"></ion-datetime>
+            <ion-datetime [(ngModel)]="tarea.limite" clearInput displayFormat="DD-MM-YYYY" value="2021-01-19" placeholder="Elige una fecha..."></ion-datetime>
           </ion-item>
         <ion-button (click)="editar ? actualizar() : guardarTarea(titulo, descripcion, inicio, limite)" color="primary" expand="block" style="margin-top:20px;">{{editar ? 'Actualizar Tarea' : 'Crear nueva Tarea'}}</ion-button>
       </ion-col>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-encabezadoforgot',
@@ -10,5 +11,4 @@ export class EncabezadoforgotComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
 }

@@ -17,10 +17,15 @@
   </div>
 
   <div id=banner>
-    <strong>Elige una alternativa:</strong>
-    <ion-button routerLink="/login" routerDirection="forward" expand="block" color="tertiary">Iniciar sesión</ion-button>
+    <strong>Accede para usar esta aplicación:</strong>
+    <ion-button routerLink="/login" routerDirection="forward" expand="block" color="success">Iniciar sesión</ion-button>
+  </div>
+  <div id=banner>
+    <strong>¿Necesitas algo más?</strong>
+    <ion-button href="https://www.duoc.cl/" expand="block" color="tertiary"><ion-icon name="globe-outline" slot="end"></ion-icon>Ir a Duoc.cl</ion-button>
 
-    <ion-button expand="block" color="success" (click)="showMyToast()"><ion-icon name="qr-code-outline" slot="end"></ion-icon>Abrir Escáner QR</ion-button>
+    <ion-button href="https://experienciavivo.duoc.cl/" expand="block" color="success"><ion-icon name="school-outline" slot="end"></ion-icon>Abrir app de Vivo Duoc</ion-button>
+    <ion-button href="https://campusvirtual.duoc.cl/webapps/login/" expand="block" color="success"><ion-icon name="school-outline" slot="end"></ion-icon>Abrir app de Blackboard</ion-button>
   </div>
 </ion-content>
 
