@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usus",
+  "info": {
+    "name": "usu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "pass": {
+      "type": "string"
+    }
+  }
+}

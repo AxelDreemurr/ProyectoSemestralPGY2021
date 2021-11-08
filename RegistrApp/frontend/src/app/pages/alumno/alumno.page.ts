@@ -13,7 +13,7 @@ export class AlumnoPage implements OnInit {
     ) {}
     
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
   }
   
     showMyToast() {
