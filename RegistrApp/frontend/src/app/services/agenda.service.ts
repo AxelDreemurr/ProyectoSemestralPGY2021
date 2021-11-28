@@ -14,7 +14,7 @@ interface Tarea {
 })
 export class AgendaService {
 
-  API = "http://localhost:1337/tareas"
+  API = "https://registrapp-app.herokuapp.com/tareas"
 
   constructor(private cliente: HttpClient) { }
 
