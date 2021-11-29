@@ -37,6 +37,10 @@ const routes: Routes = [
   },  {
     path: 'qr',
     loadChildren: () => import('./pages/qr/qr.module').then( m => m.QrPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   }
 
 

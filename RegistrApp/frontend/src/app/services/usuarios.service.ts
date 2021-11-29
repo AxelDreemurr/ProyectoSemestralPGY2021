@@ -15,4 +15,7 @@ export class UsuarioService {
     return this.cliente.get(this.API)
   }
 
+  createUsuario(username: string, pass: string) {
+    return this.cliente.post(this.API, {username, pass})
+  }
 }
