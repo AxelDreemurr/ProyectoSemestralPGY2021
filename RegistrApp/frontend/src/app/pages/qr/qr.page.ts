@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
 import { LoadingController, Platform, ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 import jsQR from 'jsqr';
 
 @Component({
@@ -26,6 +27,7 @@ export class QrPage implements OnInit {
     private qrScanner: QRScanner,
     private toastCtrl: ToastController,
     private loadingCtrl: LoadingController,
+    private router: Router,
     private plt: Platform
   ) { 
     const isInStandaloneMode = () =>
@@ -149,13 +151,13 @@ export class QrPage implements OnInit {
 
   async showQrToast() {
     const toast = await this.toastCtrl.create({
-      message: `Abrir ${this.scanResult}?`,
+      message: 'Abrir Registro de Asistencia?',
       position: 'bottom',
       buttons: [
         {
           text: 'Abrir',
           handler: () => {
-            window.open(this.scanResult, '_system', 'location=yes')
+            this.router.navigate(['/asistencia'])
           }
         }
       ]

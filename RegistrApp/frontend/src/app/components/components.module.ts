@@ -8,6 +8,8 @@ import { EncabezadoforgotComponent } from './encabezadoforgot/encabezadoforgot.c
 import { EncabezadolistComponent } from './encabezadolist/encabezadolist.component';
 import { EncabezadoaddComponent } from './encabezadoadd/encabezadoadd.component';
 import { EncabezadosignupComponent } from './encabezadosignup/encabezadosignup.component';
+import { EncabezadoaddasisComponent } from './encabezadoaddasis/encabezadoaddasis.component';
+import { EncabezadolistasisComponent } from './encabezadolistasis/encabezadolistasis.component';
 
 
 
@@ -21,7 +23,9 @@ import { EncabezadosignupComponent } from './encabezadosignup/encabezadosignup.c
     FooterComponent,
     EncabezadolistComponent,
     EncabezadoaddComponent,
-    EncabezadosignupComponent],
+    EncabezadosignupComponent,
+    EncabezadoaddasisComponent,
+    EncabezadolistasisComponent],
   imports: [
     CommonModule,
     IonicModule
@@ -33,7 +37,9 @@ import { EncabezadosignupComponent } from './encabezadosignup/encabezadosignup.c
     FooterComponent,
     EncabezadolistComponent,
     EncabezadoaddComponent,
-    EncabezadosignupComponent
+    EncabezadosignupComponent,
+    EncabezadoaddasisComponent,
+    EncabezadolistasisComponent
   ]
 })
 export class ComponentsModule { }

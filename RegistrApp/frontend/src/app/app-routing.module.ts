@@ -41,6 +41,18 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
+  {
+    path: 'lista-asistencia',
+    loadChildren: () => import('./pages/lista-asistencia/lista-asistencia.module').then( m => m.ListaAsistenciaPageModule)
+  },
+  {
+    path: 'add-asistencia',
+    loadChildren: () => import('./pages/add-asistencia/add-asistencia.module').then( m => m.AddAsistenciaPageModule)
   }
 
 

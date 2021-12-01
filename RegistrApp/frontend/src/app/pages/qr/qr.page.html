@@ -24,7 +24,7 @@
     Escanear QR desde cámara
   </ion-button>
 
-  <ion-button expand="block" color="danger" routerLink="/"><ion-icon name="log-out-outline" slot="end"></ion-icon>Volver al home</ion-button>
+  <ion-button expand="block" color="danger" routerLink="/alumno"><ion-icon name="log-out-outline" slot="end"></ion-icon>Volver al home</ion-button>
 
   <ion-button expand="block" (click)="reset()" color="warning" *ngIf="scanResult">
     <ion-icon slot="start" name="refresh"></ion-icon>
@@ -44,7 +44,7 @@
       <ion-card-title>Código QR</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      {{ scanResult }}
+      Se detectó un Código QR de RegistrApp
     </ion-card-content>
   </ion-card>
 
